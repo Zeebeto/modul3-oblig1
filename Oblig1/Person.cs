@@ -16,7 +16,7 @@ namespace Oblig1
 
         private string getContent(string pre, object value, string after = null)
         {
-            return value == null ? "" : $"{pre}{value}{after ?? ""}";
+            return value == null ? string.Empty : $"{pre}{value}{after ?? string.Empty}";
         }
         public string getDescription()
         {
@@ -35,7 +35,7 @@ namespace Oblig1
             {
                 return $"{FirstName ?? ""} {LastName ?? ""}(Id={Id})".Trim();
             }
-            else return $"{FirstName ?? ""} {LastName ?? ""}".Trim();
+            return $"{FirstName ?? ""} {LastName ?? ""}".Trim();
         }
     }
 }

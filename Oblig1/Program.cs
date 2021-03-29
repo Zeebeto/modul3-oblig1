@@ -24,8 +24,7 @@ namespace Oblig1
             haakon.Mother = sonja;
             harald.Father = olav;
 
-            var app = new FamilyApp(sverreMagnus, ingridAlexandra, haakon,
-                metteMarit, marius, harald, sonja, olav);
+            var app = new FamilyApp(sverreMagnus, ingridAlexandra, haakon, metteMarit, marius, harald, sonja, olav);
             Console.WriteLine(app.WelcomeMessage);
             while (FamilyApp.Running)
             {
